@@ -1,0 +1,101 @@
+module.exports = [{
+name: "createdeck",
+  code: `$title[1;create you deck]
+  $description[1;Pick a hero
+  $getglobaluservar[dhero] 
+  $getglobaluservar[dmini1] $getglobaluservar[dmini2] $getglobaluservar[dmini3] $getglobaluservar[dmini4] $getglobaluservar[dmini5]]
+  $footer[1;X = Hero/mini not chosen]
+  $addSelectMenu[1;heropick;Pick a hero;1;1;false;Archer queen::aqval:false:$customemoji[aq;928181912562987088];Barbarian King::bkval:false:$customemoji[bk;928181912562987088];countess::countessval:false:$customemoji[countess;928181912562987088];Royale Champion::rcval:false:$customemoji[rc;928181912562987088];Monk::monkval:false:$customemoji[monk;928181912562987088];Sheild Maiden::smval:false:$customemoji[sm;928181912562987088]]
+  $channelsendmessage[$channelID;Sent you a dm <@$authorID>]
+ $dm`
+},{
+  name: "heropick",
+  type: 'interaction',
+  prototype: 'selectMenu',
+  code: `$title[1;create you deck]
+  $description[1;Pick a hero
+  $getglobaluservar[dhero] 
+  $getglobaluservar[dmini1] $getglobaluservar[dmini2] $getglobaluservar[dmini3] $getglobaluservar[dmini4] $getglobaluservar[dmini5]]
+  $footer[1;X = Hero/mini not chosen]
+    $addSelectMenu[1;minipick2;2 Elixir Minis;1;1;false;Archer::archerval:false:$customemoji[archer;928181912562987088];Barbarian::barbval:false:$customemoji[barb;928181912562987088];Miner::minerval:false:$customemoji[miner;928181912562987088];Skeleton guard::sgval:false:$customemoji[sg;928181912562987088];Spear goblin::speargobval:false:$customemoji[speargob;928181912562987088];Wizard::wizval:false:$customemoji[wiz;928181912562987088];Ice Wizard::icewizval:false:$customemoji[icewiz;928181912562987088];Knight::knightval:false:$customemoji[knight;928181912562987088]]
+  $addButton[2;2 Elixir Minis;success;2em1;no;]
+  $addButton[2;3 Elixir Minis;success;3em1;no;]
+  $addButton[2;4 Elixir Minis;success;4em1;no;]
+  $setglobaluservar[dhero;$customemoji[bk;928181912562987088]]
+  $onlyIf[$interactionData[values[0]]==bkval;]`
+}, {
+  name: "heropick",
+  type: 'interaction', 
+  prototype: 'selectMenu',
+  code: `$title[1;create you deck]
+  $description[1;Pick a hero
+  $getglobaluservar[dhero] 
+  $getglobaluservar[dmini1] $getglobaluservar[dmini2] $getglobaluservar[dmini3] $getglobaluservar[dmini4] $getglobaluservar[dmini5]]
+  $footer[1;X = Hero/mini not chosen]
+      $addSelectMenu[1;minipick2;2 Elixir Minis;1;1;false;Archer::archerval:false:$customemoji[archer;928181912562987088];Barbarian::barbval:false:$customemoji[barb;928181912562987088];Miner::minerval:false:$customemoji[miner;928181912562987088];Skeleton guard::sgval:false:$customemoji[sg;928181912562987088];Spear goblin::speargobval:false:$customemoji[speargob;928181912562987088];Wizard::wizval:false:$customemoji[wiz;928181912562987088];Ice Wizard::icewizval:false:$customemoji[icewiz;928181912562987088];Knight::knightval:false:$customemoji[knight;928181912562987088]]
+  $addButton[2;2 Elixir Minis;success;2em1;no;]
+  $addButton[2;3 Elixir Minis;success;3em1;no;]
+  $addButton[2;4 Elixir Minis;success;4em1;no;]
+  $setglobaluservar[dhero;$customemoji[aq;928181912562987088]]
+  $onlyIf[$interactionData[values[0]]==aqval;]`
+},{
+  name: "heropick",
+  type: 'interaction', 
+  prototype: 'selectMenu',
+  code: `$title[1;create you deck]
+  $description[1;Pick a hero
+  $getglobaluservar[dhero] 
+  $getglobaluservar[dmini1] $getglobaluservar[dmini2] $getglobaluservar[dmini3] $getglobaluservar[dmini4] $getglobaluservar[dmini5]]
+  $footer[1;X = Hero/mini not chosen]
+        $addSelectMenu[1;minipick2;2 Elixir Minis;1;1;false;Archer::archerval:false:$customemoji[archer;928181912562987088];Barbarian::barbval:false:$customemoji[barb;928181912562987088];Miner::minerval:false:$customemoji[miner;928181912562987088];Skeleton guard::sgval:false:$customemoji[sg;928181912562987088];Spear goblin::speargobval:false:$customemoji[speargob;928181912562987088];Wizard::wizval:false:$customemoji[wiz;928181912562987088];Ice Wizard::icewizval:false:$customemoji[icewiz;928181912562987088];Knight::knightval:false:$customemoji[knight;928181912562987088]]
+  $addButton[2;2 Elixir Minis;success;2em1;no;]
+  $addButton[2;3 Elixir Minis;success;3em1;no;]
+  $addButton[2;4 Elixir Minis;success;4em1;no;]
+  $setglobaluservar[dhero;$customemoji[sm;928181912562987088]]
+  $onlyIf[$interactionData[values[0]]==smval;]`
+},{
+  name: "heropick",
+  type: 'interaction', 
+  prototype: 'selectMenu',
+  code: `$title[1;create you deck]
+  $description[1;Pick a hero
+  $getglobaluservar[dhero] 
+  $getglobaluservar[dmini1] $getglobaluservar[dmini2] $getglobaluservar[dmini3] $getglobaluservar[dmini4] $getglobaluservar[dmini5]]
+  $footer[1;X = Hero/mini not chosen]
+        $addSelectMenu[1;minipick2;2 Elixir Minis;1;1;false;Archer::archerval:false:$customemoji[archer;928181912562987088];Barbarian::barbval:false:$customemoji[barb;928181912562987088];Miner::minerval:false:$customemoji[miner;928181912562987088];Skeleton guard::sgval:false:$customemoji[sg;928181912562987088];Spear goblin::speargobval:false:$customemoji[speargob;928181912562987088];Wizard::wizval:false:$customemoji[wiz;928181912562987088];Ice Wizard::icewizval:false:$customemoji[icewiz;928181912562987088];Knight::knightval:false:$customemoji[knight;928181912562987088]]
+  $addButton[2;2 Elixir Minis;success;2em1;no;]
+  $addButton[2;3 Elixir Minis;success;3em1;no;]
+  $addButton[2;4 Elixir Minis;success;4em1;no;]
+  $setglobaluservar[dhero;$customemoji[countess;928181912562987088]
+  $onlyIf[$interactionData[values[0]]==countessval;]`
+},{
+  name: "heropick",
+  type: 'interaction', 
+  prototype: 'selectMenu',
+  code: `$title[1;create you deck]
+  $description[1;Pick a hero
+  $getglobaluservar[dhero] 
+  $getglobaluservar[dmini1] $getglobaluservar[dmini2] $getglobaluservar[dmini3] $getglobaluservar[dmini4] $getglobaluservar[dmini5]]
+  $footer[1;X = Hero/mini not chosen]
+        $addSelectMenu[1;minipick2;2 Elixir Minis;1;1;false;Archer::archerval:false:$customemoji[archer;928181912562987088];Barbarian::barbval:false:$customemoji[barb;928181912562987088];Miner::minerval:false:$customemoji[miner;928181912562987088];Skeleton guard::sgval:false:$customemoji[sg;928181912562987088];Spear goblin::speargobval:false:$customemoji[speargob;928181912562987088];Wizard::wizval:false:$customemoji[wiz;928181912562987088];Ice Wizard::icewizval:false:$customemoji[icewiz;928181912562987088];Knight::knightval:false:$customemoji[knight;928181912562987088]]
+  $addButton[2;2 Elixir Minis;success;2em1;no;]
+  $addButton[2;3 Elixir Minis;success;3em1;no;]
+  $addButton[2;4 Elixir Minis;success;4em1;no;]
+  $setglobaluservar[dhero;$customemoji[rc;928181912562987088]]
+  $onlyIf[$interactionData[values[0]]==rcval;]`
+},{
+  name: "heropick",
+  type: 'interaction', 
+  prototype: 'selectMenu',
+  code: `$title[1;create you deck]
+  $description[1;Pick a hero
+  $getglobaluservar[dhero] 
+ $getglobaluservar[dmini1] $getglobaluservar[dmini2] $getglobaluservar[dmini3] $getglobaluservar[dmini4] $getglobaluservar[dmini5]]
+  $footer[1;X = Hero/mini not chosen]
+        $addSelectMenu[1;minipick2;2 Elixir Minis;1;1;false;Archer::archerval:false:$customemoji[archer;928181912562987088];Barbarian::barbval:false:$customemoji[barb;928181912562987088];Miner::minerval:false:$customemoji[miner;928181912562987088];Skeleton guard::sgval:false:$customemoji[sg;928181912562987088];Spear goblin::speargobval:false:$customemoji[speargob;928181912562987088];Wizard::wizval:false:$customemoji[wiz;928181912562987088];Ice Wizard::icewizval:false:$customemoji[icewiz;928181912562987088];Knight::knightval:false:$customemoji[knight;928181912562987088]]
+  $addButton[2;2 Elixir Minis;success;2em1;no;]
+  $addButton[2;3 Elixir Minis;success;3em1;no;]
+  $addButton[2;4 Elixir Minis;success;4em1;no;]
+  $setglobaluservar[dhero;$customemoji[monk;928181912562987088]]
+  $onlyIf[$interactionData[values[0]]==monkval;]`
+}]
