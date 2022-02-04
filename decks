@@ -1,0 +1,46 @@
+module.exports = [{
+ name: "decks",
+ type: 'interaction', 
+ prototype: 'slash', 
+ code: `
+$color[1;RANDOM]
+$thumbnail[1;$authorAvatar]
+$description[1;
+$customEmoji[bk;928181912562987088] **Barbarian king**
+
+$customEmoji[bk;928181912562987088] | $customEmoji[wiz;928181912562987088] $customEmoji[miner;928181912562987088] $customEmoji[prince;928181912562987088] $customEmoji[archer;928181912562987088] $customEmoji[barb;928181912562987088] 
+
+$customEmoji[bk;928181912562987088] | $customEmoji[barb;928181912562987088] $customEmoji[archer;928181912562987088] $customEmoji[miner;928181912562987088] $customEmoji[wiz;928181912562987088] $customEmoji[sg;928181912562987088]
+
+
+$customemoji[aq;928181912562987088] **Archer queen**
+
+$customemoji[aq;928181912562987088] | $customEmoji[prince;928181912562987088] $customemoji[musk;928181912562987088] $customemoji[lj;928181912562987088] $customemoji[sg;928181912562987088] $customemoji[gs;928181912562987088]
+
+$customemoji[aq;928181912562987088] | $customemoji[lj;928181912562987088] $customemoji[pekka;928181912562987088] $customemoji[prince;928181912562987088] $customemoji[musk;928181912562987088] $customemoji[gs;928181912562987088]
+
+
+$customemoji[sm;928181912562987088] **Shield Maiden**
+
+$customemoji[sm;928181912562987088] | $customemoji[mp;928181912562987088] $customemoji[wiz;928181912562987088] $customemoji[dg;928181912562987088] $customemoji[bh;928181912562987088] $customemoji[miner;928181912562987088]
+
+$customemoji[sm;928181912562987088] | $customEmoji[pekka;928181912562987088] $customemoji[barb;928181912562987088] $customemoji[mk;928181912562987088] $customemoji[archer;928181912562987088] $customemoji[dg;928181912562987088]
+
+
+$customemoji[rc;928181912562987088] **Royal Champion**
+
+$customemoji[rc;928181912562987088] | $customemoji[wiz;928181912562987088] $customemoji[mk;928181912562987088] $customemoji[barb;928181912562987088] $customemoji[prince;928181912562987088] $customemoji[pekka;928181912562987088]
+
+$customEmoji[rc;928181912562987088] | $customemoji[musk;928181912562987088] $customEmoji[ma;928181912562987088] $customemoji[gs;928181912562987088] $customEmoji[mk;928181912562987088] $customemoji[barb;928181912562987088]
+
+
+$customemoji[countess;928181912562987088] **Countess**
+
+$customemoji[countess;928181912562987088] | $customemoji[miner;928181912562987088] $customemoji[mk;928181912562987088] $customemoji[pekka;928181912562987088] $customemoji[archer;928181912562987088] $customemoji[prince;928181912562987088]
+
+$customemoji[countess;928181912562987088] | $customemoji[miner;928181912562987088] $customemoji[mk;928181912562987088] $customemoji[pekka;928181912562987088] $customemoji[archer;928181912562987088] $customemoji[wiz;928181912562987088]]
+$footer[1; THESE ARE NOT YOUR DECKS THEY ARE SOME RECOMMENDED DECKS]
+$addButton[1;Invite me;5;https://discord.com/api/oauth2/authorize?client_id=928240676909506600&scope=bot+applications.commands]
+
+`
+}]
