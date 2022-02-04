@@ -1,0 +1,5 @@
+module.exports = {
+name: "randommini",
+aliases: ['random-mini','rmini',],
+code: `$randomText[$customemoji[mk;928181912562987088];$customemoji[bh;928181912562987088];$customemoji[archer;928181912562987088];$customemoji[mp;928181912562987088];$customemoji[gs;928181912562987088];$customemoji[wiz;928181912562987088]$customemoji[valk;928181912562987088];$customemoji[prince;928181912562987088];$customemoji[pekka;928181912562987088];$customemoji[musk;928181912562987088];$customemoji[miner;928181912562987088];$customemoji[lj;928181912562987088];$customemoji[ma;928181912562987088];$customemoji[knight;928181912562987088];$customemoji[icewiz;928181912562987088];$customemoji[sg;928181912562987088];$customemoji[ewiz;928181912562987088];$customemoji[dg;928181912562987088];$customemoji[bowler;928181912562987088];$customemoji[barb;928181912562987088]]`
+}
