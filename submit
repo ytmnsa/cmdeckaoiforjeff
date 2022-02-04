@@ -1,0 +1,6 @@
+module.exports = {
+  name: "submit",
+  code: `Submitted, if your deck gets accepted you will get a dm
+  $channelsendmessage[935824367831621662;\` $authorID | $userTag\` 
+  $message]`
+}
